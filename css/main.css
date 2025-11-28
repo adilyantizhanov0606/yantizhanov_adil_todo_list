@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#main-header {
+    background-color: rgb(0, 113, 30);
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+#main-header :hover {
+    margin: 40px;
+    transition: all .6s ease-in-out;
+
+}
+
+header h1 {
+    text-align: center;
+    padding: 40px
+    color: red
+}
+
+.decor-heading::before {
+    content: "🐸";
+    margin-right: 20px;
+}
+
+.decor-heading::after {
+    content: "🐸";
+    margin-left: 20px;
+}
+
+
+article {
+    width: 500px;
+    border: 4px solid white;
+    border-radius: 50px;
+    margin: 10px 12px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 30px 0px black ;
+}
+
+article h2 {
+    color: red;
+    padding: 4px 8px;
+}
+
+article:first-of-type {
+    border: 4px solid red;
+}
+
+#inprogress {
+    border-color: yellow;  
+}
+
+#inprogress h2 {
+    color: yellowgreen;
+}
+
+#done {
+    border-color: rgb(53, 128, 0);
+}
+#done h2 {
+    color: green ; 
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+ul li {
+    padding: 6px 8px;
+    text-transform: uppercase;
+}
+
+.todo li:nth-child(odd) {
+    background-color: rgba(183, 13, 13, 0.5);
+}
+
+.inprogress li:nth-child(odd) {
+    background-color: rgba(255, 255, 3, 0.5);
+}
+
+.done li:nth-child(odd) {
+    background-color: rgba(4, 255, 0, 0.5)
+}
+
+#checkboxes {
+    background-image: url(../images/main_hero.jpg);
+     padding-top: 50px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input[type="checkbox"]:checked + label-first {
+    text-decoration:underline;
+    color: rgb(195, 255, 0);
+    transition: all .3s ease-in-out;
+}
+
+input[type="checkbox"]:checked + label-second::after {
+    content: "👍";
+    margin-left: 20px;
+}
+
+input[type="checkbox"]:checked + label-second {
+    color: rgb(26, 255, 0);
+    transition: all .3s ease-in-out;
+
+
+
+
+
+    
+
+   
+
+
